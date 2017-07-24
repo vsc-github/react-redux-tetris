@@ -1,2 +1,6 @@
 .appContent {
+    width: 65vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    margin: 0 auto;
 }

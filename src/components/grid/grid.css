@@ -1,0 +1,22 @@
+.grid-container div{
+    overflow: hidden;
+}
+
+.grid-container{
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.block{
+    display: inline-block;
+    width: 100%;
+    background: rebeccapurple;
+    border: 1px solid #fff;
+}

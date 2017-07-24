@@ -3,15 +3,17 @@ import {
 } from "../actions/grid";
 
 export function grid(state = {
-    current : []
+    current : [],
+    dimensions: {}
 }, action) {
     switch (action.type) {
         case INITIALIZE_GRID:
-            let filler = Array(10).fill('#ffffff');
-            let grid = Array(10).fill(filler);
+            let filler = Array(8).fill('#ffffff');
+            let grid = Array(action.dimensions.stackCount).fill(filler);
 
             return Object.assign({}, state, {
-                current: grid
+                current: grid,
+                dimensions: action.dimensions
             });
         default:
             return state;
