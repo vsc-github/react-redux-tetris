@@ -17,6 +17,6 @@
 .block{
     display: inline-block;
     width: 100%;
-    background: rebeccapurple;
-    border: 1px solid #fff;
+    background: #ccc;
+    /*border: 1px solid #fff;*/
 }

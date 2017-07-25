@@ -7,7 +7,8 @@ const renderRow = (arr,size) => {
     return arr.map((ele, key) => <div className="block" key={key}
         style={{
             height: size+'vw',
-            width: size+'vw'
+            width: size+'vw',
+            backgroundColor: ele === ' ' ? '#ccc' : ele
         }}
     >
 

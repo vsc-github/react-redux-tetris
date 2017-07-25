@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import Grid from '../../components/grid/Grid';
 
-import {initializeGridAction} from "../../actions/grid";
+import { initializeGridAction, addShapeToGrid } from "../../actions/grid";
 
 import "./home.css";
 
@@ -10,6 +10,8 @@ class Home extends Component {
 
     constructor() {
         super();
+
+        this.addShape = this.addShape.bind(this);
     }
 
     componentDidMount() {
@@ -34,12 +36,17 @@ class Home extends Component {
         }));
     }
 
+    addShape(){
+        const { dispatch } = this.props;
+        dispatch(addShapeToGrid());
+    }
+
     render() {
-        console.log('This.pris.girg',this.props.grid);
         const { current, dimensions } = this.props.grid;
         return (
             <div className="home">
                 <Grid currentGrid={current} dimensions={dimensions}/>
+                <button onClick={this.addShape}></button>
             </div>
         );
     }
