@@ -8,7 +8,7 @@ const renderRow = (arr,size) => {
         style={{
             height: size+'vw',
             width: size+'vw',
-            backgroundColor: ele === ' ' ? '#ccc' : ele
+            backgroundColor: ele === 'empty' ? '#ccc' : ele.split('+')[1]
         }}
     >
 

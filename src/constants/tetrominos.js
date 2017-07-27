@@ -3,15 +3,15 @@
  */
 
 export const I = [
-    [' ',' ','#212121','#212121','#212121','#212121',' ',' '],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
+    ['empty','empty','float+#212121','float+#212121','float+#212121','float+#212121','empty','empty'],
+    ['empty','empty','empty','empty','empty','empty','empty','empty'],
+    ['empty','empty','empty','empty','empty','empty','empty','empty'],
+    ['empty','empty','empty','empty','empty','empty','empty','empty'],
 ];
 
 export const O = [
-    [' ',' ',' ','#212121','#212121',' ',' ',' '],
-    [' ',' ',' ','#212121','#212121',' ',' ',' '],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
-    [' ',' ',' ',' ',' ',' ',' ',' '],
+    ['empty','empty','empty','float+#212121','float+#212121','empty','empty','empty'],
+    ['empty','empty','empty','float+#212121','float+#212121','empty','empty','empty'],
+    ['empty','empty','empty','empty','empty','empty','empty','empty'],
+    ['empty','empty','empty','empty','empty','empty','empty','empty'],
 ];

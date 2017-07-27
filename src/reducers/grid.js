@@ -9,7 +9,7 @@ export function grid(state = {
 }, action) {
     switch (action.type) {
         case INITIALIZE_GRID:
-            let filler = Array(8).fill('#ccc');
+            let filler = Array(8).fill('empty');
             let grid = Array(action.dimensions.stackCount).fill(filler);
 
             return Object.assign({}, state, {
