@@ -4,14 +4,10 @@
 
 export const I = [
     ['empty','empty','float+#212121','float+#212121','float+#212121','float+#212121','empty','empty'],
-    ['empty','empty','empty','empty','empty','empty','empty','empty'],
-    ['empty','empty','empty','empty','empty','empty','empty','empty'],
-    ['empty','empty','empty','empty','empty','empty','empty','empty'],
+    ['empty','empty','empty','empty','empty','empty','empty','empty']
 ];
 
 export const O = [
     ['empty','empty','empty','float+#212121','float+#212121','empty','empty','empty'],
-    ['empty','empty','empty','float+#212121','float+#212121','empty','empty','empty'],
-    ['empty','empty','empty','empty','empty','empty','empty','empty'],
-    ['empty','empty','empty','empty','empty','empty','empty','empty'],
+    ['empty','empty','empty','float+#212121','float+#212121','empty','empty','empty']
 ];
