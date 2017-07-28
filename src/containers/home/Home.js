@@ -36,10 +36,10 @@ class Home extends Component {
             width: blockWidth * 8
         }));
 
-        const timer = setInterval(this.ticker, 2000);
+       /* const timer = setInterval(this.ticker, 1000);
         this.setState({
             timer
-        });
+        });*/
     }
 
     componentWillUnmount() {
@@ -61,7 +61,8 @@ class Home extends Component {
         return (
             <div className="home">
                 <Grid currentGrid={current} dimensions={dimensions}/>
-                <button onClick={this.addShape}></button>
+                <button onClick={this.addShape}>Add shape!</button>
+                <button onClick={this.ticker}>Tick!</button>
             </div>
         );
     }
