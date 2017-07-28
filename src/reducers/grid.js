@@ -19,7 +19,7 @@ export function grid(state = {
             });
 
         case ADD_SHAPE:
-            let oldGrid = state.current.slice(4);
+            let oldGrid = cloneArray(state.current).slice(2);
             let newGrid = action.shapeArray.concat(oldGrid);
             return Object.assign({},state,{
                 current: newGrid
