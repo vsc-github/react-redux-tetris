@@ -36,13 +36,28 @@ export function grid(state = {
                         break;
                     }
                 }
+                // here up is the height to which they can drop
+
                 let previous = 'empty';
                 for( dropper = 0 ; dropper <= up ; dropper++){
                     // add logic here to check if next block is solid
                     // or if its the end of the board!
-                    let temp = stateCopy[dropper][rightWays];
-                    stateCopy[dropper][rightWays] = previous;
-                    previous = temp;
+
+
+                    //block reaching bottom of the grid logic
+                    if(dropper === up-1){
+                        console.log("Dropper==up",stateCopy[dropper][rightWays]);
+                        stateCopy[dropper][rightWays] = stateCopy[dropper][rightWays].replace('float','fixe d');
+                        console.log("After replace",dropper,up,stateCopy[dropper][rightWays]);
+                    }
+                    else if( stateCopy[dropper+1] !== undefined && stateCopy[dropper+1][rightWays].includes('fixed')){
+                        stateCopy[dropper][rightWays] = stateCopy[dropper][rightWays].replace('float','fixed');
+                    }
+
+                        let temp = stateCopy[dropper][rightWays];
+                        stateCopy[dropper][rightWays] = previous;
+                        previous = temp;
+
                 }
             }
 
